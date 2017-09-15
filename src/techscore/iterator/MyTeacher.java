@@ -14,7 +14,7 @@ public class MyTeacher extends Teacher {
     private MyStudentList studentList;
 
     public void createStudentList() {
-        studentList = new MyStudentList(5);
+        studentList = new MyStudentList();
         studentList.add(new Student("赤井亮太", 1));
         studentList.add(new Student("赤羽里美", 2));
         studentList.add(new Student("岡田美央", 2));
@@ -23,10 +23,10 @@ public class MyTeacher extends Teacher {
     }
 
     public void callStudents() {
-        int stuCount = this.studentList.getLastNum();
-
-        for (int i = 0; i < stuCount; i++) {
-            System.out.println(this.studentList.getStudentAt(i).getName());
+        Iterator itr = studentList.iterator();
+        while (itr.hasNext()) {
+            Student s = (Student)itr.next();
+            System.out.println(s.getName());
         }
     }
     

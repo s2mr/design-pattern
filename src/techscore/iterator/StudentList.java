@@ -5,33 +5,29 @@
  */
 package techscore.iterator;
 
+import java.util.Vector;
+
 /**
  *
  * @author kaz
  */
 public class StudentList {
 
-    protected Student[] students;
-    private int last = 0;
+    protected Vector<Student> students;
 
-    //TODO: どういう時に使うんだろう
-    public StudentList() {
-    }
-
-    public StudentList(int studentCount) {
-        this.students = new Student[studentCount];
+    StudentList() {
+        students = new Vector<Student>();
     }
 
     public void add(Student student) {
-        this.students[last] = student;
-        last += 1;
+        students.add(student);
     }
 
     public Student getStudentAt(int index) {
-        return this.students[index];
+        return students.get(index);
     }
 
     public int getLastNum() {
-        return last;
+        return students.size();
     }
 }
