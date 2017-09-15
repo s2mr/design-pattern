@@ -16,20 +16,10 @@ public class Iterator {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Student stu1 = new Student("TARO", 1);
-        Student stu2 = new Student("MOMO", 1);
-        Student stu3 = new Student("PIYO", 1);
-
-        StudentList list = new StudentList(3);
-        list.add(stu1);
-        list.add(stu2);
-        list.add(stu3);
         
         Teacher you = new MyTeacher();
         you.createStudentList();
         you.callStudents();
-        
-        System.out.println(list.getStudentAt(0).getName());
     }
 
 }
