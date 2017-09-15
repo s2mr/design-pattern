@@ -14,6 +14,10 @@ public class StudentList {
     protected Student[] students;
     private int last = 0;
 
+    //TODO: どういう時に使うんだろう
+    public StudentList() {
+    }
+
     public StudentList(int studentCount) {
         this.students = new Student[studentCount];
     }

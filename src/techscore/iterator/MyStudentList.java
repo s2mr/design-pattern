@@ -9,10 +9,18 @@ package techscore.iterator;
  *
  * @author kaz
  */
-public class MyStudentList extends StudentList {
+public class MyStudentList extends StudentList implements Aggregate {
+    
+    //TODO: これをここに書く必要あるのかな、実装するわけでもないし
+    public MyStudentList() {
+        super();
+    }
     
     public MyStudentList(int studentCount) {
         super(studentCount);
     }
     
+    public Iterator iterator() {
+        return new MyStudentListIterator(this);
+    }
 }

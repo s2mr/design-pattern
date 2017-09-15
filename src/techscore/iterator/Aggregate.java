@@ -9,7 +9,6 @@ package techscore.iterator;
  *
  * @author kaz
  */
-public interface Iterator {
-    public boolean hasNext();
-    public Object next();
+public interface Aggregate {
+    public Iterator iterator();
 }
