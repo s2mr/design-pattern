@@ -12,18 +12,7 @@ package w3ii.adapter;
 public class VlcPlayer implements AdvancedMediaPlayer {
 
     @Override
-    public void playVlc(String fileName) {
+    public void play(String fileName) {
         System.out.println("Playing vlc file. Name: " + fileName);
     }
-
-    @Override
-    public void playMp4(String fileName) {
-        // do nothing
-    }
-
-    @Override
-    public void playMp5(String fileName) {
-        // do nothing
-    }
-
 }

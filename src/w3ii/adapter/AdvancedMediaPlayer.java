@@ -10,10 +10,8 @@ package w3ii.adapter;
  * @author kaz
  */
 public interface AdvancedMediaPlayer {
-
-    public void playVlc(String fileName);
-
-    public void playMp4(String fileName);
-    
-    public void playMp5(String fileName);
+    //消してから思ったけど、playMp4とか全部ここに書いてたのは、
+    //一覧で見て何を実装しているのかわかりやすいからだったのかもしれない
+    //これだとMediaPlayerとあんまり変わらないし。
+    public void play(String fileName);
 }

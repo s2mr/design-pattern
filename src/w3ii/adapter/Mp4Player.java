@@ -11,21 +11,8 @@ package w3ii.adapter;
  */
 public class Mp4Player implements AdvancedMediaPlayer {
 
-    //mp4プレイヤーなのにこの関数があることが無駄な気が。。
-    //vlcプレイヤーについても同様
     @Override
-    public void playVlc(String fileName) {
-        // do nothing
-    }
-
-    @Override
-    public void playMp4(String fileName) {
+    public void play(String fileName) {
         System.out.println("Playing mp4 file. Name: " + fileName);
     }
-
-    @Override
-    public void playMp5(String fileName) {
-        // do nothing
-    }
-
 }
