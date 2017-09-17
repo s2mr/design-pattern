@@ -6,3 +6,5 @@
 
 # これを使うと何がいいの？
 オブジェクトの配列やListなどにアクセスする内部表現を隠蔽して、その要素に順にアクセスしたりできる
+
+![](http://www.techscore.com/page_attachments/0000/0684/iterator4.gif)
