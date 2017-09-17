@@ -16,7 +16,10 @@ public class AudioPlayer implements MediaPlayer {
         // mp3 はもともとサポート
         if (audioType.equalsIgnoreCase("mp3")) {
             System.out.println("Playing mp3 file. Name: " + fileName);
-        } else if (audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("mp4")) {
+        } else if (audioType.equalsIgnoreCase("vlc")
+                || audioType.equalsIgnoreCase("mp4")
+                || audioType.equalsIgnoreCase("mp5")) {
+            //mp3以外はアダプターを介す
             MediaAdapter mediaAdapter = new MediaAdapter(audioType);
             mediaAdapter.play(audioType, fileName);
         } else {

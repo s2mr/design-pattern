@@ -9,8 +9,10 @@ package w3ii.adapter;
  *
  * @author kaz
  */
+//古いMediaPlayerの規格を新しいAdvancedPlayerの規格に変換
 public class MediaAdapter implements MediaPlayer {
 
+    //AdvancedMediaPlayerはinterface
     AdvancedMediaPlayer advancedMediaPlayer;
 
     MediaAdapter(String audioType) {
@@ -18,6 +20,8 @@ public class MediaAdapter implements MediaPlayer {
             advancedMediaPlayer = new VlcPlayer();
         } else if (audioType.equalsIgnoreCase("mp4")) {
             advancedMediaPlayer = new Mp4Player();
+        } else if (audioType.equalsIgnoreCase("mp5")) {
+            advancedMediaPlayer = new Mp5Player();
         }
     }
 
@@ -27,6 +31,8 @@ public class MediaAdapter implements MediaPlayer {
             advancedMediaPlayer.playVlc(fileName);
         } else if (audioType.equalsIgnoreCase("mp4")) {
             advancedMediaPlayer.playMp4(fileName);
+        } else if (audioType.equalsIgnoreCase("mp5")) {
+            advancedMediaPlayer.playMp5(fileName);
         }
     }
 

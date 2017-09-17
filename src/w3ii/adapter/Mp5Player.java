@@ -9,11 +9,11 @@ package w3ii.adapter;
  *
  * @author kaz
  */
-public class VlcPlayer implements AdvancedMediaPlayer {
+public class Mp5Player implements AdvancedMediaPlayer {
 
     @Override
     public void playVlc(String fileName) {
-        System.out.println("Playing vlc file. Name: " + fileName);
+        // do nothing
     }
 
     @Override
@@ -23,7 +23,7 @@ public class VlcPlayer implements AdvancedMediaPlayer {
 
     @Override
     public void playMp5(String fileName) {
-        // do nothing
+        System.out.println("Playing mp5 file. Name: " + fileName);
     }
-
+    
 }
