@@ -25,5 +25,5 @@ public class TanakasWoodCutPrint extends WoodCutPrint {
     public void print(Cuttable hanzai) {
         System.out.println("印刷する");
     }
-    
+
 }

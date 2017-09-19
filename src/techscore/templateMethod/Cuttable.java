@@ -10,5 +10,5 @@ package techscore.templateMethod;
  * @author kaz
  */
 public interface Cuttable {
-    
+
 }
