@@ -11,4 +11,7 @@ package techscore.templateMethod;
  */
 public interface Cuttable {
 
+    public int getWeight();
+
+    public void setWeight(int weight);
 }

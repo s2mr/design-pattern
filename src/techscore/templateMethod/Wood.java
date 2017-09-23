@@ -11,4 +11,19 @@ package techscore.templateMethod;
  */
 public class Wood implements Cuttable {
 
+    int weight;
+
+    public Wood(int weight) {
+        this.weight = weight;
+    }
+
+    @Override
+    public int getWeight() {
+        return weight;
+    }
+
+    @Override
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
 }

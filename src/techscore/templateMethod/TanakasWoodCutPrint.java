@@ -13,16 +13,19 @@ public class TanakasWoodCutPrint extends WoodCutPrint {
 
     @Override
     public void draw(Cuttable hanzai) {
+        hanzai.setWeight(hanzai.getWeight() - 50);
         System.out.println("描く");
     }
 
     @Override
     public void cut(Cuttable hanzai) {
+        hanzai.setWeight(hanzai.getWeight() - 50);
         System.out.println("切る");
     }
 
     @Override
     public void print(Cuttable hanzai) {
+        hanzai.setWeight(hanzai.getWeight() - 50);
         System.out.println("印刷する");
     }
 
