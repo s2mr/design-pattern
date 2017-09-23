@@ -10,5 +10,21 @@ package techscore.factoryMethod;
  * @author kaz
  */
 public class Potato implements Cuttable {
-    
+
+    int weight;
+
+    public Potato(int weight) {
+        this.weight = weight;
+    }
+
+    @Override
+    public int getWeight() {
+        return weight;
+    }
+
+    @Override
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
 }

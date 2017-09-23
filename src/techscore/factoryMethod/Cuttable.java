@@ -10,4 +10,6 @@ package techscore.factoryMethod;
  * @author kaz
  */
 public interface Cuttable {
+    int getWeight();
+    void setWeight(int weight);
 }
