@@ -18,6 +18,7 @@ public class Main {
         Teacher teacher = new Teacher();
         Paper[] papers = teacher.createManyCrystals();  
         System.out.println(papers[0].getName());
+        System.out.println(papers[1].getName());
     }
     
 }

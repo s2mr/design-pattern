@@ -20,11 +20,18 @@ public class Teacher {
         drawCrystal(prototype);
         cutAccordanceWithLine(prototype);
 
-        Paper[] papers = new Paper[100];
+        PrototypeKeeper keeper = new PrototypeKeeper();
+        keeper.addCloneable("crystal", prototype);
+        
+        //再度宣言すべきかなと思ったがこれでもなんか行けた
+        prototype = new Paper("赤いおうち");
+        drawCrystal(prototype);
+        keeper.addCloneable("house", prototype);
 
-        for (int i = 0; i < papers.length; i++) {
-            papers[i] = (Paper) prototype.createClone();
-        }
+        Paper[] papers = new Paper[2];
+
+        papers[0] = (Paper) keeper.getClone("crystal");
+        papers[1] = (Paper) keeper.getClone("house");
 
         return papers;
     }
