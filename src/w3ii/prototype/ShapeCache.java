@@ -17,20 +17,20 @@ public class ShapeCache {
 
     public static Shape getShape(String shapeId) {
         Shape cachedShape = shapeMap.get(shapeId);
-        return cachedShape;
+        return (Shape) cachedShape.clone();
     }
 
-    public void loadCache() {
+    public static void loadCache() {
         Shape circle = new Circle();
         circle.setId("1");
         shapeMap.put(circle.getId(), circle);
         
         Shape rectangle = new Rectangle();
-        rectangle.setId("1");
+        rectangle.setId("2");
         shapeMap.put(rectangle.getId(), rectangle);
         
         Shape square = new Square();
-        square.setId("1");
+        square.setId("3");
         shapeMap.put(square.getId(), square);
     }
     

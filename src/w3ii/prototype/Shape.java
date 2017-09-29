@@ -7,7 +7,7 @@ package w3ii.prototype;
 
 /**
  *
- * @author kaz
+ * @author kaz  
  */
 public abstract class Shape implements Cloneable {
     private String id;
